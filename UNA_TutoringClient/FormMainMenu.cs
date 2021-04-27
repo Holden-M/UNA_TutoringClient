@@ -19,6 +19,7 @@ namespace UNA_TutoringClient
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
+    
 
         public FormMainMenu()
         {
@@ -38,6 +39,7 @@ namespace UNA_TutoringClient
         {
             public static Color color1 = Color.FromArgb(172, 126, 241);
             public static Color color2 = Color.FromArgb(249, 118, 176);
+            public static Color color3 = Color.FromArgb(128, 134, 219);
         }
 
         //Methods
@@ -110,6 +112,12 @@ namespace UNA_TutoringClient
             OpenChildForm(new FormSearch());
         }
 
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color3);
+            OpenChildForm(new FormLogin());
+        }
+
         private void Reset()
         {
             DisableButton();
@@ -147,5 +155,6 @@ namespace UNA_TutoringClient
         {
             WindowState = FormWindowState.Minimized;
         }
+
     }
 }
