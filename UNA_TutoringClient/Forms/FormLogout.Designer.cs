@@ -44,7 +44,7 @@ namespace UNA_TutoringClient.Forms
             this.panelLogout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelLogout.Location = new System.Drawing.Point(0, 0);
             this.panelLogout.Name = "panelLogout";
-            this.panelLogout.Size = new System.Drawing.Size(721, 365);
+            this.panelLogout.Size = new System.Drawing.Size(784, 461);
             this.panelLogout.TabIndex = 0;
             // 
             // btnLogout
@@ -56,7 +56,7 @@ namespace UNA_TutoringClient.Forms
             this.btnLogout.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
             this.btnLogout.IconColor = System.Drawing.Color.DarkRed;
             this.btnLogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnLogout.Location = new System.Drawing.Point(276, 148);
+            this.btnLogout.Location = new System.Drawing.Point(315, 210);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(151, 49);
             this.btnLogout.TabIndex = 2;
@@ -70,7 +70,7 @@ namespace UNA_TutoringClient.Forms
             this.lblPromptLogout.AutoSize = true;
             this.lblPromptLogout.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblPromptLogout.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblPromptLogout.Location = new System.Drawing.Point(190, 105);
+            this.lblPromptLogout.Location = new System.Drawing.Point(229, 167);
             this.lblPromptLogout.Name = "lblPromptLogout";
             this.lblPromptLogout.Size = new System.Drawing.Size(321, 30);
             this.lblPromptLogout.TabIndex = 1;
@@ -80,7 +80,7 @@ namespace UNA_TutoringClient.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(721, 365);
+            this.ClientSize = new System.Drawing.Size(784, 461);
             this.Controls.Add(this.panelLogout);
             this.Name = "FormLogout";
             this.Text = "Logout";

@@ -45,7 +45,8 @@ namespace UNA_TutoringClient.Forms
             this.btnExit = new FontAwesome.Sharp.IconButton();
             this.picLoginLogo = new System.Windows.Forms.PictureBox();
             this.panelIgnore = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnRegisterNow = new System.Windows.Forms.Button();
+            this.panelMain = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.iconUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconKey)).BeginInit();
             this.panel.SuspendLayout();
@@ -186,7 +187,7 @@ namespace UNA_TutoringClient.Forms
             this.panel.Controls.Add(this.btnExit);
             this.panel.Controls.Add(this.picLoginLogo);
             this.panel.Controls.Add(this.panelIgnore);
-            this.panel.Controls.Add(this.button1);
+            this.panel.Controls.Add(this.btnRegisterNow);
             this.panel.Controls.Add(this.lblRegister);
             this.panel.Controls.Add(this.input_password);
             this.panel.Controls.Add(this.input_username);
@@ -197,14 +198,13 @@ namespace UNA_TutoringClient.Forms
             this.panel.Controls.Add(this.iconUser);
             this.panel.Controls.Add(this.lblPassword);
             this.panel.Controls.Add(this.lblUsername);
+            this.panel.Controls.Add(this.panelMain);
             this.panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel.Location = new System.Drawing.Point(0, 0);
             this.panel.Margin = new System.Windows.Forms.Padding(7);
             this.panel.Name = "panel";
             this.panel.Size = new System.Drawing.Size(500, 500);
             this.panel.TabIndex = 0;
-            this.panel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Paint);
-            this.panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_MouseDown);
             // 
             // panel1
             // 
@@ -263,17 +263,27 @@ namespace UNA_TutoringClient.Forms
             this.panelIgnore.Size = new System.Drawing.Size(275, 2);
             this.panelIgnore.TabIndex = 7;
             // 
-            // button1
+            // btnRegisterNow
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button1.Location = new System.Drawing.Point(180, 416);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 32);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Register Now";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnRegisterNow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegisterNow.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRegisterNow.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnRegisterNow.Location = new System.Drawing.Point(180, 416);
+            this.btnRegisterNow.Name = "btnRegisterNow";
+            this.btnRegisterNow.Size = new System.Drawing.Size(126, 32);
+            this.btnRegisterNow.TabIndex = 6;
+            this.btnRegisterNow.Text = "Register Now";
+            this.btnRegisterNow.UseVisualStyleBackColor = true;
+            this.btnRegisterNow.Click += new System.EventHandler(this.btnRegisterNow_Click);
+            // 
+            // panelMain
+            // 
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(0, 0);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(500, 500);
+            this.panelMain.TabIndex = 12;
+            this.panelMain.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelMain_MouseDown);
             // 
             // FormLogin
             // 
@@ -310,11 +320,12 @@ namespace UNA_TutoringClient.Forms
         private System.Windows.Forms.TextBox input_password;
         private System.Windows.Forms.Label lblRegister;
         private System.Windows.Forms.Panel panel;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnRegisterNow;
         private System.Windows.Forms.Panel panelIgnore;
         private System.Windows.Forms.PictureBox picLoginLogo;
         private FontAwesome.Sharp.IconButton btnExit;
         private System.Windows.Forms.Label lblInvalidCredentials;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelMain;
     }
 }
