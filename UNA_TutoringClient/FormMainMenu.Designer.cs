@@ -30,7 +30,6 @@ namespace UNA_TutoringClient
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btnLogin = new FontAwesome.Sharp.IconButton();
             this.Logout = new FontAwesome.Sharp.IconButton();
             this.btnSettings = new FontAwesome.Sharp.IconButton();
             this.btnSearch = new FontAwesome.Sharp.IconButton();
@@ -57,7 +56,6 @@ namespace UNA_TutoringClient
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.panelMenu.Controls.Add(this.btnLogin);
             this.panelMenu.Controls.Add(this.Logout);
             this.panelMenu.Controls.Add(this.btnSettings);
             this.panelMenu.Controls.Add(this.btnSearch);
@@ -68,27 +66,6 @@ namespace UNA_TutoringClient
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(200, 511);
             this.panelMenu.TabIndex = 0;
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.FlatAppearance.BorderSize = 0;
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnLogin.IconChar = FontAwesome.Sharp.IconChar.SignInAlt;
-            this.btnLogin.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnLogin.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnLogin.IconSize = 32;
-            this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogin.Location = new System.Drawing.Point(0, 462);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnLogin.Size = new System.Drawing.Size(200, 49);
-            this.btnLogin.TabIndex = 4;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // Logout
             // 
@@ -356,7 +333,6 @@ namespace UNA_TutoringClient
         private FontAwesome.Sharp.IconButton btnMaximize;
         private FontAwesome.Sharp.IconButton btnMinimize;
         private FontAwesome.Sharp.IconButton btnExit;
-        private FontAwesome.Sharp.IconButton btnLogin;
         private FontAwesome.Sharp.IconButton btnSettings;
     }
 }

@@ -30,7 +30,7 @@ namespace UNA_TutoringClient.Forms
         private void InitializeComponent()
         {
             this.panelLogout = new System.Windows.Forms.Panel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.btnLogout = new FontAwesome.Sharp.IconButton();
             this.lblPromptLogout = new System.Windows.Forms.Label();
             this.panelLogout.SuspendLayout();
             this.SuspendLayout();
@@ -39,7 +39,7 @@ namespace UNA_TutoringClient.Forms
             // 
             this.panelLogout.AutoSize = true;
             this.panelLogout.BackColor = System.Drawing.Color.Indigo;
-            this.panelLogout.Controls.Add(this.iconButton1);
+            this.panelLogout.Controls.Add(this.btnLogout);
             this.panelLogout.Controls.Add(this.lblPromptLogout);
             this.panelLogout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelLogout.Location = new System.Drawing.Point(0, 0);
@@ -47,22 +47,23 @@ namespace UNA_TutoringClient.Forms
             this.panelLogout.Size = new System.Drawing.Size(721, 365);
             this.panelLogout.TabIndex = 0;
             // 
-            // iconButton1
+            // btnLogout
             // 
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Lucida Console", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.iconButton1.ForeColor = System.Drawing.Color.DarkRed;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
-            this.iconButton1.IconColor = System.Drawing.Color.DarkRed;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(276, 148);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(151, 49);
-            this.iconButton1.TabIndex = 2;
-            this.iconButton1.Text = "LOGOUT";
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.iconButton1.UseVisualStyleBackColor = true;
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Font = new System.Drawing.Font("Lucida Console", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLogout.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnLogout.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
+            this.btnLogout.IconColor = System.Drawing.Color.DarkRed;
+            this.btnLogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnLogout.Location = new System.Drawing.Point(276, 148);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(151, 49);
+            this.btnLogout.TabIndex = 2;
+            this.btnLogout.Text = "LOGOUT";
+            this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // lblPromptLogout
             // 
@@ -93,7 +94,7 @@ namespace UNA_TutoringClient.Forms
         #endregion
 
         private System.Windows.Forms.Panel panelLogout;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton btnLogout;
         private System.Windows.Forms.Label lblPromptLogout;
     }
 }

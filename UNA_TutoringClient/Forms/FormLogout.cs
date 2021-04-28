@@ -16,5 +16,10 @@ namespace UNA_TutoringClient.Forms
         {
             InitializeComponent();
         }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
