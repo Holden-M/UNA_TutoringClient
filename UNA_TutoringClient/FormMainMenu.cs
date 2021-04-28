@@ -40,6 +40,8 @@ namespace UNA_TutoringClient
             public static Color color1 = Color.FromArgb(172, 126, 241);
             public static Color color2 = Color.FromArgb(249, 118, 176);
             public static Color color3 = Color.FromArgb(128, 134, 219);
+            public static Color color4 = Color.FromArgb(30, 190, 50);
+            public static Color color5 = Color.FromArgb(213, 18, 70);
         }
 
         //Methods
@@ -118,13 +120,25 @@ namespace UNA_TutoringClient
             OpenChildForm(new FormLogin());
         }
 
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color4);
+            OpenChildForm(new FormSettings());
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color5);
+            OpenChildForm(new FormLogout());
+        }
+
         private void Reset()
         {
             DisableButton();
             leftBorderBtn.Visible = false;
             iconCurrentChildForm.IconChar = IconChar.Home;
-            iconCurrentChildForm.IconColor = Color.Gainsboro;
-            lblTitleChildForm.Text = "Dashboard";
+            iconCurrentChildForm.IconColor = RGBColors.color3;
+            lblTitleChildForm.Text = "Login";
         }
 
         // Drag Form

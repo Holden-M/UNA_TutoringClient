@@ -32,6 +32,7 @@ namespace UNA_TutoringClient
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnLogin = new FontAwesome.Sharp.IconButton();
             this.Logout = new FontAwesome.Sharp.IconButton();
+            this.btnSettings = new FontAwesome.Sharp.IconButton();
             this.btnSearch = new FontAwesome.Sharp.IconButton();
             this.btnDashboard = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
@@ -58,6 +59,7 @@ namespace UNA_TutoringClient
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.panelMenu.Controls.Add(this.btnLogin);
             this.panelMenu.Controls.Add(this.Logout);
+            this.panelMenu.Controls.Add(this.btnSettings);
             this.panelMenu.Controls.Add(this.btnSearch);
             this.panelMenu.Controls.Add(this.btnDashboard);
             this.panelMenu.Controls.Add(this.panelLogo);
@@ -69,19 +71,18 @@ namespace UNA_TutoringClient
             // 
             // btnLogin
             // 
-            this.btnLogin.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnLogin.IconChar = FontAwesome.Sharp.IconChar.Joint;
+            this.btnLogin.IconChar = FontAwesome.Sharp.IconChar.SignInAlt;
             this.btnLogin.IconColor = System.Drawing.Color.Gainsboro;
             this.btnLogin.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnLogin.IconSize = 32;
             this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogin.Location = new System.Drawing.Point(0, 280);
+            this.btnLogin.Location = new System.Drawing.Point(0, 462);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnLogin.Size = new System.Drawing.Size(200, 60);
+            this.btnLogin.Size = new System.Drawing.Size(200, 49);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Login";
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -91,7 +92,6 @@ namespace UNA_TutoringClient
             // 
             // Logout
             // 
-            this.Logout.Dock = System.Windows.Forms.DockStyle.Top;
             this.Logout.FlatAppearance.BorderSize = 0;
             this.Logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Logout.ForeColor = System.Drawing.Color.Gainsboro;
@@ -100,19 +100,40 @@ namespace UNA_TutoringClient
             this.Logout.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Logout.IconSize = 32;
             this.Logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Logout.Location = new System.Drawing.Point(0, 220);
+            this.Logout.Location = new System.Drawing.Point(0, 272);
             this.Logout.Name = "Logout";
             this.Logout.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.Logout.Size = new System.Drawing.Size(200, 60);
+            this.Logout.Size = new System.Drawing.Size(200, 52);
             this.Logout.TabIndex = 3;
             this.Logout.Text = "Logout";
             this.Logout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Logout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Logout.UseVisualStyleBackColor = true;
+            this.Logout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // btnSettings
+            // 
+            this.btnSettings.FlatAppearance.BorderSize = 0;
+            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettings.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnSettings.IconChar = FontAwesome.Sharp.IconChar.Cogs;
+            this.btnSettings.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnSettings.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSettings.IconSize = 32;
+            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSettings.Location = new System.Drawing.Point(0, 214);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnSettings.Size = new System.Drawing.Size(200, 52);
+            this.btnSettings.TabIndex = 2;
+            this.btnSettings.Text = "Settings";
+            this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSettings.UseVisualStyleBackColor = true;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // btnSearch
             // 
-            this.btnSearch.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSearch.FlatAppearance.BorderSize = 0;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.ForeColor = System.Drawing.Color.Gainsboro;
@@ -121,10 +142,10 @@ namespace UNA_TutoringClient
             this.btnSearch.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSearch.IconSize = 32;
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearch.Location = new System.Drawing.Point(0, 160);
+            this.btnSearch.Location = new System.Drawing.Point(0, 156);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnSearch.Size = new System.Drawing.Size(200, 60);
+            this.btnSearch.Size = new System.Drawing.Size(200, 52);
             this.btnSearch.TabIndex = 2;
             this.btnSearch.Text = "Search";
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -134,7 +155,6 @@ namespace UNA_TutoringClient
             // 
             // btnDashboard
             // 
-            this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnDashboard.FlatAppearance.BorderSize = 0;
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDashboard.ForeColor = System.Drawing.Color.Gainsboro;
@@ -143,10 +163,10 @@ namespace UNA_TutoringClient
             this.btnDashboard.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDashboard.IconSize = 32;
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.Location = new System.Drawing.Point(0, 100);
+            this.btnDashboard.Location = new System.Drawing.Point(0, 98);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnDashboard.Size = new System.Drawing.Size(200, 60);
+            this.btnDashboard.Size = new System.Drawing.Size(200, 52);
             this.btnDashboard.TabIndex = 1;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -162,7 +182,7 @@ namespace UNA_TutoringClient
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.panelLogo.Size = new System.Drawing.Size(200, 100);
+            this.panelLogo.Size = new System.Drawing.Size(200, 92);
             this.panelLogo.TabIndex = 0;
             // 
             // logo
@@ -171,9 +191,9 @@ namespace UNA_TutoringClient
             this.logo.BackgroundImage = global::UNA_TutoringClient.Properties.Resources.UNA_Logo;
             this.logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.logo.Image = global::UNA_TutoringClient.Properties.Resources.UNA_Logo;
-            this.logo.Location = new System.Drawing.Point(12, 6);
+            this.logo.Location = new System.Drawing.Point(12, 12);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(173, 88);
+            this.logo.Size = new System.Drawing.Size(168, 78);
             this.logo.TabIndex = 1;
             this.logo.TabStop = false;
             // 
@@ -337,6 +357,7 @@ namespace UNA_TutoringClient
         private FontAwesome.Sharp.IconButton btnMinimize;
         private FontAwesome.Sharp.IconButton btnExit;
         private FontAwesome.Sharp.IconButton btnLogin;
+        private FontAwesome.Sharp.IconButton btnSettings;
     }
 }
 
