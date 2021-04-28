@@ -49,6 +49,7 @@ namespace UNA_TutoringClient.Forms
             // panelMain
             // 
             this.panelMain.BackColor = System.Drawing.Color.Indigo;
+            this.panelMain.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelMain.Controls.Add(this.btnBack);
             this.panelMain.Controls.Add(this.txtRegister_Password);
             this.panelMain.Controls.Add(this.txtRegister_RePassword);

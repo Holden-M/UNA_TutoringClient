@@ -17,9 +17,10 @@ namespace UNA_TutoringClient.Forms
             InitializeComponent();
         }
 
-        private void FormSearch_Load(object sender, EventArgs e)
-        {
 
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            lblSearch_Results.Text = "All avaliable appointments for " + txtClass.Text + "...";
         }
     }
 }

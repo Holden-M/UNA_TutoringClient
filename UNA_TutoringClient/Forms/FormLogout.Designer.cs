@@ -49,7 +49,6 @@ namespace UNA_TutoringClient.Forms
             // 
             // btnLogout
             // 
-            this.btnLogout.FlatAppearance.BorderSize = 0;
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Lucida Console", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLogout.ForeColor = System.Drawing.Color.DarkRed;
