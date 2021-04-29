@@ -129,16 +129,15 @@ namespace UNA_TutoringClient.Forms
             // 
             // btnRegister
             // 
-            this.btnRegister.FlatAppearance.BorderSize = 0;
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegister.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnRegister.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnRegister.IconChar = FontAwesome.Sharp.IconChar.Check;
             this.btnRegister.IconColor = System.Drawing.Color.Gainsboro;
             this.btnRegister.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnRegister.Location = new System.Drawing.Point(179, 352);
+            this.btnRegister.Location = new System.Drawing.Point(151, 349);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(166, 49);
+            this.btnRegister.Size = new System.Drawing.Size(166, 55);
             this.btnRegister.TabIndex = 3;
             this.btnRegister.Text = "REGISTER";
             this.btnRegister.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -220,7 +219,7 @@ namespace UNA_TutoringClient.Forms
             this.lblRegister.AutoSize = true;
             this.lblRegister.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblRegister.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblRegister.Location = new System.Drawing.Point(88, 76);
+            this.lblRegister.Location = new System.Drawing.Point(68, 78);
             this.lblRegister.Name = "lblRegister";
             this.lblRegister.Size = new System.Drawing.Size(351, 45);
             this.lblRegister.TabIndex = 0;

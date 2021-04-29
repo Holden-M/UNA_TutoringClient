@@ -50,7 +50,7 @@ namespace UNA_TutoringClient.Forms
             this.panelSearch.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSearch.Location = new System.Drawing.Point(0, 0);
             this.panelSearch.Name = "panelSearch";
-            this.panelSearch.Size = new System.Drawing.Size(800, 75);
+            this.panelSearch.Size = new System.Drawing.Size(800, 60);
             this.panelSearch.TabIndex = 0;
             // 
             // btnSearch
@@ -65,7 +65,7 @@ namespace UNA_TutoringClient.Forms
             this.btnSearch.IconColor = System.Drawing.Color.Gainsboro;
             this.btnSearch.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSearch.IconSize = 35;
-            this.btnSearch.Location = new System.Drawing.Point(578, 21);
+            this.btnSearch.Location = new System.Drawing.Point(579, 11);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(15);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(135, 43);
@@ -78,7 +78,7 @@ namespace UNA_TutoringClient.Forms
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel1.Location = new System.Drawing.Point(269, 56);
+            this.panel1.Location = new System.Drawing.Point(269, 52);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(255, 2);
             this.panel1.TabIndex = 2;
@@ -89,7 +89,7 @@ namespace UNA_TutoringClient.Forms
             this.txtClass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtClass.Font = new System.Drawing.Font("Segoe UI", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.txtClass.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txtClass.Location = new System.Drawing.Point(269, 22);
+            this.txtClass.Location = new System.Drawing.Point(269, 18);
             this.txtClass.Name = "txtClass";
             this.txtClass.Size = new System.Drawing.Size(255, 32);
             this.txtClass.TabIndex = 1;
@@ -100,7 +100,7 @@ namespace UNA_TutoringClient.Forms
             this.lblPrompt_Search.AutoSize = true;
             this.lblPrompt_Search.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblPrompt_Search.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblPrompt_Search.Location = new System.Drawing.Point(67, 21);
+            this.lblPrompt_Search.Location = new System.Drawing.Point(70, 11);
             this.lblPrompt_Search.Name = "lblPrompt_Search";
             this.lblPrompt_Search.Size = new System.Drawing.Size(167, 37);
             this.lblPrompt_Search.TabIndex = 0;
@@ -111,9 +111,9 @@ namespace UNA_TutoringClient.Forms
             this.panelBody.BackColor = System.Drawing.Color.Indigo;
             this.panelBody.Controls.Add(this.lblSearch_Results);
             this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelBody.Location = new System.Drawing.Point(0, 75);
+            this.panelBody.Location = new System.Drawing.Point(0, 60);
             this.panelBody.Name = "panelBody";
-            this.panelBody.Size = new System.Drawing.Size(800, 375);
+            this.panelBody.Size = new System.Drawing.Size(800, 390);
             this.panelBody.TabIndex = 1;
             // 
             // lblSearch_Results
