@@ -30,8 +30,8 @@ namespace UNA_TutoringClient.Forms
         private void InitializeComponent()
         {
             this.panelMain = new System.Windows.Forms.Panel();
-            this.panelSettings = new System.Windows.Forms.Panel();
             this.panelDisplay = new System.Windows.Forms.Panel();
+            this.panelSettings = new System.Windows.Forms.Panel();
             this.btnResetPassword = new FontAwesome.Sharp.IconButton();
             this.panelMain.SuspendLayout();
             this.panelSettings.SuspendLayout();
@@ -48,6 +48,14 @@ namespace UNA_TutoringClient.Forms
             this.panelMain.Size = new System.Drawing.Size(800, 450);
             this.panelMain.TabIndex = 0;
             // 
+            // panelDisplay
+            // 
+            this.panelDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDisplay.Location = new System.Drawing.Point(200, 0);
+            this.panelDisplay.Name = "panelDisplay";
+            this.panelDisplay.Size = new System.Drawing.Size(600, 450);
+            this.panelDisplay.TabIndex = 1;
+            // 
             // panelSettings
             // 
             this.panelSettings.Controls.Add(this.btnResetPassword);
@@ -57,14 +65,6 @@ namespace UNA_TutoringClient.Forms
             this.panelSettings.Size = new System.Drawing.Size(200, 450);
             this.panelSettings.TabIndex = 0;
             // 
-            // panelDisplay
-            // 
-            this.panelDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDisplay.Location = new System.Drawing.Point(200, 0);
-            this.panelDisplay.Name = "panelDisplay";
-            this.panelDisplay.Size = new System.Drawing.Size(600, 450);
-            this.panelDisplay.TabIndex = 1;
-            // 
             // btnResetPassword
             // 
             this.btnResetPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -72,7 +72,7 @@ namespace UNA_TutoringClient.Forms
             this.btnResetPassword.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnResetPassword.IconColor = System.Drawing.Color.Black;
             this.btnResetPassword.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnResetPassword.Location = new System.Drawing.Point(25, 37);
+            this.btnResetPassword.Location = new System.Drawing.Point(28, 12);
             this.btnResetPassword.Name = "btnResetPassword";
             this.btnResetPassword.Size = new System.Drawing.Size(146, 29);
             this.btnResetPassword.TabIndex = 0;
