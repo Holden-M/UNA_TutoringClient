@@ -295,6 +295,7 @@ namespace UNA_TutoringClient.Forms
             this.Controls.Add(this.panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.iconUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconKey)).EndInit();
