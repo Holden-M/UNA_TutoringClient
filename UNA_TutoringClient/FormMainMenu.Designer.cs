@@ -29,6 +29,7 @@ namespace UNA_TutoringClient
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMainMenu));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.Logout = new FontAwesome.Sharp.IconButton();
             this.btnSettings = new FontAwesome.Sharp.IconButton();
@@ -45,12 +46,15 @@ namespace UNA_TutoringClient
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.panelShadow = new System.Windows.Forms.Panel();
             this.panelDashboard = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UNA_Logo)).BeginInit();
             this.panelTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
+            this.panelDashboard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -258,15 +262,14 @@ namespace UNA_TutoringClient
             this.lblTitleChildForm.ForeColor = System.Drawing.Color.Gainsboro;
             this.lblTitleChildForm.Location = new System.Drawing.Point(63, 12);
             this.lblTitleChildForm.Name = "lblTitleChildForm";
-            this.lblTitleChildForm.Size = new System.Drawing.Size(118, 30);
+            this.lblTitleChildForm.Size = new System.Drawing.Size(0, 30);
             this.lblTitleChildForm.TabIndex = 1;
-            this.lblTitleChildForm.Text = "Dashboard";
             // 
             // iconCurrentChildForm
             // 
             this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.iconCurrentChildForm.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.HorseHead;
             this.iconCurrentChildForm.IconColor = System.Drawing.Color.Gainsboro;
             this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconCurrentChildForm.Location = new System.Drawing.Point(25, 12);
@@ -287,11 +290,24 @@ namespace UNA_TutoringClient
             // panelDashboard
             // 
             this.panelDashboard.BackColor = System.Drawing.Color.Indigo;
+            this.panelDashboard.Controls.Add(this.pictureBox1);
             this.panelDashboard.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDashboard.Location = new System.Drawing.Point(200, 55);
             this.panelDashboard.Name = "panelDashboard";
             this.panelDashboard.Size = new System.Drawing.Size(784, 456);
             this.panelDashboard.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(209, 82);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(350, 259);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // FormMainMenu
             // 
@@ -311,6 +327,8 @@ namespace UNA_TutoringClient
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
+            this.panelDashboard.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -334,6 +352,7 @@ namespace UNA_TutoringClient
         private FontAwesome.Sharp.IconButton btnMinimize;
         private FontAwesome.Sharp.IconButton btnExit;
         private FontAwesome.Sharp.IconButton btnSettings;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
